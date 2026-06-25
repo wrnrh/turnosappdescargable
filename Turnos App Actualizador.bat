@@ -31,7 +31,7 @@ if exist "%APPDIR%\Turnos App.exe" del /f /q "%APPDIR%\Turnos App.exe"
 
 echo.
 echo Descargando configuracion...
-powershell -Command "Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/wrnrh/turnosappdescargable/5c4597152cce02355eb48e8ece03ad5e809161ec/turnos%%20app/options.ini' -OutFile '%APPDIR%\options.ini'"
+powershell -Command "Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/wrnrh/turnosappdescargable/main/turnos%%20app/options.ini' -OutFile '%APPDIR%\options.ini'"
 
 if not exist "%APPDIR%\options.ini" (
 echo ERROR: No se pudo descargar options.ini
@@ -43,7 +43,7 @@ echo Configuracion descargada correctamente.
 
 echo.
 echo Descargando datos...
-powershell -Command "Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/wrnrh/turnosappdescargable/5c4597152cce02355eb48e8ece03ad5e809161ec/turnos%%20app/data.win' -OutFile '%APPDIR%\data.win'"
+powershell -Command "Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/wrnrh/turnosappdescargable/main/turnos%%20app/data.win' -OutFile '%APPDIR%\data.win'"
 
 if not exist "%APPDIR%\data.win" (
 echo ERROR: No se pudo descargar data.win
@@ -55,7 +55,7 @@ echo Datos descargados correctamente.
 
 echo.
 echo Descargando aplicacion...
-powershell -Command "Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/wrnrh/turnosappdescargable/5c4597152cce02355eb48e8ece03ad5e809161ec/turnos%%20app/Turnos%%20App.exe' -OutFile '%APPDIR%\Turnos App.exe'"
+powershell -Command "Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/wrnrh/turnosappdescargable/main/turnos%%20app/Turnos%%20App.exe' -OutFile '%APPDIR%\Turnos App.exe'"
 
 if not exist "%APPDIR%\Turnos App.exe" (
 echo ERROR: No se pudo descargar Turnos App.exe
